@@ -2,9 +2,19 @@
 using namespace std;
 int main()
 {
+     // Windows comand promt klarar endast
+     // Engelska tecken
+     // Du kan säga till Windows att använda ett
+     // annat sätt att representera tecken
+     // Överst i main
+     system("chcp 1252");
+     // Change Code Page till 1252
+     // Ett sätt att visa tecken som klarar
+     // Sv. tecken
+
     // Utmatning
     // skärmen << "Hello world!" << radbrytning
-    cout << "Hello world!" << endl;
+    cout << "ÅÅÄÖÅ äöå" << endl;
     // variabler
     // heltal
     int tal;
@@ -37,9 +47,9 @@ int main()
     // Vid heltal: Modulus operatorn: %
     int t1 = 3;
     int t2 = 2;
-    cout << "Heltalsdivision: " << t1 / t2 << endl;
-    cout << "Modulus: " << t1 % t2 << endl;
-
+   // cout << "Heltalsdivision: " << t1 / t2 << endl;
+   // cout << "Modulus: " << t1 % t2 << endl;
+    system("notepad.exe");
 
     return 0;
 }
